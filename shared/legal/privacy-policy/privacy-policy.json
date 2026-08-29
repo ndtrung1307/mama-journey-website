@@ -6,7 +6,7 @@
   "subtitle": "MamaJourney",
   "effectiveDate": "2026-08-28",
   "contact": {
-    "email": "ndtrung1307@gmail.com"
+    "email": "support@mama-journey.io.vn"
   },
   "introduction": "MamaJourney (“Mama”, “MamaJourney”, “chúng tôi”) là một ứng dụng được phát triển độc lập, với mục tiêu hỗ trợ người dùng theo dõi và tìm hiểu hành trình thai kỳ và sức khỏe sinh sản thông qua thông tin giáo dục, nội dung được cá nhân hóa, nhắc nhở và các tính năng liên quan.\n\nMamaJourney hiện được vận hành bởi một nhà phát triển độc lập, chưa được vận hành dưới một công ty hoặc pháp nhân riêng.\n\nChúng tôi tôn trọng quyền riêng tư của bạn và muốn bạn hiểu rõ thông tin nào được xử lý khi sử dụng MamaJourney, thông tin đó được sử dụng cho mục đích gì, được lưu ở đâu và trong bao lâu.\n\nChính sách này mô tả cách MamaJourney xử lý thông tin khi bạn sử dụng ứng dụng.",
   "sections": [
@@ -97,7 +97,7 @@
       "id": "data-deletion",
       "tocTitle": "Xóa dữ liệu",
       "title": "Xóa dữ liệu",
-      "content": "### 10.1 Xóa dữ liệu trên thiết bị\n\nVì phần lớn dữ liệu hành trình của bạn được lưu trên thiết bị, bạn có thể sử dụng chức năng Xóa toàn bộ dữ liệu trong MamaJourney để xóa dữ liệu cục bộ tương ứng.\n\nBạn cũng có thể xóa ứng dụng khỏi thiết bị. Việc này có thể xóa dữ liệu cục bộ của MamaJourney tùy thuộc vào hệ điều hành và cài đặt của thiết bị.\n\n### 10.2 Dữ liệu phân tích và lỗi kỹ thuật\n\nViệc sử dụng Xóa toàn bộ dữ liệu chỉ tác động đến dữ liệu được lưu cục bộ trên thiết bị.\n\nNó không xóa ngay lập tức dữ liệu đã được gửi đến PostHog hoặc Sentry trước đó.\n\nDữ liệu này hiện được lưu tối đa 30 ngày theo cấu hình hiện tại và sau đó được xóa.\n\n### 10.3 Phản hồi\n\nPhản hồi được lưu riêng trong máy chủ của MamaJourney và không bị xóa khi bạn sử dụng Xóa toàn bộ dữ liệu.\n\nPhản hồi được lưu tối đa 12 tháng và sau đó được xóa.\n\nNếu bạn muốn yêu cầu xóa phản hồi mà mình đã gửi trước thời hạn này, bạn có thể liên hệ với chúng tôi qua:\n\n[ndtrung1307@gmail.com](mailto:ndtrung1307@gmail.com)"
+      "content": "### 10.1 Xóa dữ liệu trên thiết bị\n\nVì phần lớn dữ liệu hành trình của bạn được lưu trên thiết bị, bạn có thể sử dụng chức năng Xóa toàn bộ dữ liệu trong MamaJourney để xóa dữ liệu cục bộ tương ứng.\n\nBạn cũng có thể xóa ứng dụng khỏi thiết bị. Việc này có thể xóa dữ liệu cục bộ của MamaJourney tùy thuộc vào hệ điều hành và cài đặt của thiết bị.\n\n### 10.2 Dữ liệu phân tích và lỗi kỹ thuật\n\nViệc sử dụng Xóa toàn bộ dữ liệu chỉ tác động đến dữ liệu được lưu cục bộ trên thiết bị.\n\nNó không xóa ngay lập tức dữ liệu đã được gửi đến PostHog hoặc Sentry trước đó.\n\nDữ liệu này hiện được lưu tối đa 30 ngày theo cấu hình hiện tại và sau đó được xóa.\n\n### 10.3 Phản hồi\n\nPhản hồi được lưu riêng trong máy chủ của MamaJourney và không bị xóa khi bạn sử dụng Xóa toàn bộ dữ liệu.\n\nPhản hồi được lưu tối đa 12 tháng và sau đó được xóa.\n\nNếu bạn muốn yêu cầu xóa phản hồi mà mình đã gửi trước thời hạn này, bạn có thể liên hệ với chúng tôi qua:\n\n[support@mama-journey.io.vn](mailto:support@mama-journey.io.vn)"
     },
     {
       "id": "security",
@@ -109,7 +109,7 @@
       "id": "children",
       "tocTitle": "Trẻ em",
       "title": "Quyền riêng tư của trẻ em",
-      "content": "MamaJourney được thiết kế cho người trưởng thành và không hướng đến trẻ em.\n\nChúng tôi không chủ động thu thập thông tin cá nhân của trẻ em.\n\nNếu bạn cho rằng một trẻ em đã cung cấp thông tin cho MamaJourney, vui lòng liên hệ với chúng tôi qua [ndtrung1307@gmail.com](mailto:ndtrung1307@gmail.com) để chúng tôi có thể xem xét và thực hiện biện pháp phù hợp."
+      "content": "MamaJourney được thiết kế cho người trưởng thành và không hướng đến trẻ em.\n\nChúng tôi không chủ động thu thập thông tin cá nhân của trẻ em.\n\nNếu bạn cho rằng một trẻ em đã cung cấp thông tin cho MamaJourney, vui lòng liên hệ với chúng tôi qua [support@mama-journey.io.vn](mailto:support@mama-journey.io.vn) để chúng tôi có thể xem xét và thực hiện biện pháp phù hợp."
     },
     {
       "id": "medical-information",
@@ -127,7 +127,7 @@
       "id": "contact",
       "tocTitle": "Liên hệ",
       "title": "Liên hệ với chúng tôi",
-      "content": "Nếu bạn có câu hỏi về:\n\n- Chính sách quyền riêng tư này.\n- Cách MamaJourney xử lý dữ liệu.\n- Việc xóa phản hồi bạn đã gửi.\n- Các vấn đề khác liên quan đến quyền riêng tư.\n\nBạn có thể liên hệ với chúng tôi tại:\n\nThư điện tử: [ndtrung1307@gmail.com](mailto:ndtrung1307@gmail.com)"
+      "content": "Nếu bạn có câu hỏi về:\n\n- Chính sách quyền riêng tư này.\n- Cách MamaJourney xử lý dữ liệu.\n- Việc xóa phản hồi bạn đã gửi.\n- Các vấn đề khác liên quan đến quyền riêng tư.\n\nBạn có thể liên hệ với chúng tôi tại:\n\nThư điện tử: [support@mama-journey.io.vn](mailto:support@mama-journey.io.vn)"
     }
   ]
 }

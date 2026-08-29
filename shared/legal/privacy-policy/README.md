@@ -23,7 +23,7 @@ File này là **single source of truth** cho:
   "title": "Chính sách quyền riêng tư",
   "subtitle": "MamaJourney",
   "effectiveDate": "2026-08-28",
-  "contact": { "email": "ndtrung1307@gmail.com" },
+  "contact": { "email": "support@mama-journey.io.vn" },
   "introduction": "Markdown...",
   "sections": [
     {
@@ -40,14 +40,14 @@ File này là **single source of truth** cho:
 
 ### Trường section
 
-| Trường | Bắt buộc | Mô tả |
-|--------|----------|-------|
-| `id` | Có | ID ổn định, kebab-case, tiếng Anh |
-| `title` | Có | Tiêu đề section |
-| `content` | Có | Nội dung Markdown |
-| `tocTitle` | Không | Nhãn ngắn cho mục lục website |
-| `table` | Không | Bảng dữ liệu có cấu trúc |
-| `contentAfter` | Không | Markdown sau bảng |
+| Trường         | Bắt buộc | Mô tả                             |
+| -------------- | -------- | --------------------------------- |
+| `id`           | Có       | ID ổn định, kebab-case, tiếng Anh |
+| `title`        | Có       | Tiêu đề section                   |
+| `content`      | Có       | Nội dung Markdown                 |
+| `tocTitle`     | Không    | Nhãn ngắn cho mục lục website     |
+| `table`        | Không    | Bảng dữ liệu có cấu trúc          |
+| `contentAfter` | Không    | Markdown sau bảng                 |
 
 ### Markdown được hỗ trợ
 

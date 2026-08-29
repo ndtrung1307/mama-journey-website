@@ -48,8 +48,8 @@ def validate_document(document: dict) -> None:
         fail("effectiveDate must use YYYY-MM-DD format.")
 
     email = document.get("contact", {}).get("email", "")
-    if email != "ndtrung1307@gmail.com":
-        fail(f"Contact email must remain ndtrung1307@gmail.com (found: {email})")
+    if email != "support@mama-journey.io.vn":
+        fail(f"Contact email must remain support@mama-journey.io.vn (found: {email})")
 
     sections = document["sections"]
     if not sections:
