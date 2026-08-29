@@ -1,50 +1,52 @@
 # MamaJourney Website
 
-Website tĩnh phục vụ Chính sách quyền riêng tư và trang Liên hệ của ứng dụng MamaJourney. Được thiết kế để triển khai trực tiếp qua GitHub Pages.
+Static website for the MamaJourney app Privacy Policy and Contact page. Designed for deployment on GitHub Pages.
 
 ## Privacy Policy Architecture
 
-Chính sách quyền riêng tư có **một nguồn nội dung duy nhất**:
+The privacy policy uses a **single source of truth**:
 
 ```
 shared/legal/privacy-policy/privacy-policy.json
 ```
 
-- **Website:** generate `privacy-policy/index.html` từ JSON — không duy trì bản sao thủ công.
-- **iOS:** bundle cùng file JSON (hoặc bản copy được đồng bộ tự động) — không viết lại nội dung trong app.
+- **Website:** generates `privacy-policy/index.html` from JSON — no manually maintained copy.
+- **iOS:** bundles the same JSON file (or an automatically synced copy) — no duplicated in-app content.
 
-### Cập nhật Chính sách quyền riêng tư
+### Updating the Privacy Policy
 
-1. Sửa `shared/legal/privacy-policy/privacy-policy.json`
-2. Tăng `version` và cập nhật `effectiveDate`
+1. Edit `shared/legal/privacy-policy/privacy-policy.json`
+2. Bump `version` and update `effectiveDate`
 3. Validate: `python3 scripts/validate-privacy-policy.py`
-4. Generate website: `python3 scripts/build-privacy-policy.py`
-5. Cập nhật bundled JSON trong iOS project
-6. QA website và iOS
-7. Commit tất cả thay đổi cùng nhau
+4. Generate the website: `python3 scripts/build-privacy-policy.py`
+5. Update the bundled JSON in the iOS project
+6. QA the website and iOS app
+7. Commit all changes together
 
-Chi tiết schema và hướng dẫn iOS: `shared/legal/privacy-policy/README.md`
+For the JSON schema and iOS integration notes, see `shared/legal/privacy-policy/README.md`.
 
-## Cấu trúc thư mục
+## Project Structure
 
 ```
 mamajourney-website/
 ├── shared/
 │   └── legal/
 │       └── privacy-policy/
-│           ├── privacy-policy.json   # Nguồn nội dung chính thức
+│           ├── privacy-policy.json   # Canonical content source
 │           └── README.md
 ├── scripts/
-│   ├── build-privacy-policy.py       # Generate HTML từ JSON
+│   ├── build-privacy-policy.py       # Generate HTML from JSON
 │   ├── validate-privacy-policy.py    # Validate JSON
 │   └── markdown_utils.py
 ├── index.html
 ├── privacy-policy/
-│   └── index.html                    # Generated — không sửa thủ công
+│   └── index.html                    # Generated — do not edit manually
 ├── contact/
 │   └── index.html
 ├── css/
 │   └── style.css
+├── js/
+│   └── nav.js                        # Mobile navigation toggle
 ├── assets/
 │   ├── application-icon.png
 │   └── home-header.png
@@ -52,7 +54,7 @@ mamajourney-website/
 └── README.md
 ```
 
-## Xem trước cục bộ
+## Local Preview
 
 ```bash
 python3 scripts/validate-privacy-policy.py
@@ -60,35 +62,35 @@ python3 scripts/build-privacy-policy.py
 python3 -m http.server 8000
 ```
 
-Truy cập: `http://localhost:8000`
+Open: `http://localhost:8000`
 
-## Triển khai với GitHub Pages
+## Deploy with GitHub Pages
 
-1. Chạy build script trước khi commit (nếu đã sửa JSON).
-2. Push repository lên GitHub.
-3. Vào **Settings → Pages**.
-4. Chọn **Deploy from a branch**.
+1. Run the build script before committing (if JSON was changed).
+2. Push the repository to GitHub.
+3. Go to **Settings → Pages**.
+4. Choose **Deploy from a branch**.
 5. Branch: `main`, folder: `/ (root)`.
-6. Lưu và đợi vài phút.
+6. Save and wait a few minutes.
 
-URL mặc định: `https://<username>.github.io/mamajourney-website/`
+Default URL: `https://<username>.github.io/mamajourney-website/`
 
-## Kết nối custom domain (sau này)
+## Custom Domain (later)
 
-Khi DNS cho `mamajourney.app` đã sẵn sàng:
+When DNS for `mamajourney.app` is ready:
 
-1. Tạo file `CNAME` ở root với nội dung: `mamajourney.app`
-2. Cấu hình custom domain trong GitHub Pages settings.
-3. Cấu hình DNS theo hướng dẫn của GitHub.
+1. Create a `CNAME` file at the repo root containing: `mamajourney.app`
+2. Configure the custom domain in GitHub Pages settings.
+3. Set up DNS records per GitHub’s instructions.
 
-## Thông tin liên hệ
+## Contact
 
 Email: `ndtrung1307@gmail.com`
 
-Trang liên hệ: `contact/index.html`
+Contact page: `contact/index.html`
 
-## Lưu ý quan trọng
+## Important Notes
 
-- Website này **không** thu thập dữ liệu người dùng, không dùng analytics, cookies hay form.
-- Khi thay đổi cách xử lý dữ liệu trong app, cập nhật JSON chính sách và kiểm tra khai báo App Store Connect.
-- Không chỉnh sửa trực tiếp `privacy-policy/index.html` — file đó được generate.
+- This website **does not** collect user data and does not use analytics, cookies, or forms.
+- When data handling in the app changes, update the policy JSON and review your App Store Connect disclosures.
+- Do not edit `privacy-policy/index.html` directly — that file is generated.
