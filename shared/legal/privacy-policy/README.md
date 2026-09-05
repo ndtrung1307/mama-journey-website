@@ -23,7 +23,7 @@ File này là **single source of truth** cho:
   "title": "Chính sách quyền riêng tư",
   "subtitle": "MamaJourney",
   "effectiveDate": "2026-08-28",
-  "contact": { "email": "support@mama-journey.io.vn" },
+  "contact": { "email": "ndtrung1307@gmail.com" },
   "introduction": "Markdown...",
   "sections": [
     {
