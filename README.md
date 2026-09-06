@@ -85,7 +85,7 @@ When DNS for `mamajourney.app` is ready:
 
 ## Contact
 
-Email: `ndtrung1307@gmail.com`
+Email: `support@mama-journey.io.vn`
 
 Contact page: `contact/index.html`
 
