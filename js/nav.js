@@ -7,7 +7,10 @@
     return;
   }
 
-  const mobileQuery = window.matchMedia("(max-width: 600px)");
+  const breakpoint = header.getAttribute("data-nav-breakpoint") || "600px";
+  const mobileQuery = window.matchMedia(
+    "(max-width: " + (/^\d+px$/.test(breakpoint) ? breakpoint : "600px") + ")"
+  );
 
   function setOpen(isOpen) {
     header.classList.toggle("site-header--nav-open", isOpen);
@@ -40,5 +43,30 @@
     if (!event.matches) {
       closeNav();
     }
+  });
+})();
+
+(function () {
+  const screens = document.querySelectorAll("[data-app-shot]");
+
+  screens.forEach(function (screen) {
+    const src = screen.getAttribute("data-app-shot");
+    if (!src) {
+      return;
+    }
+
+    const img = new Image();
+    img.className = "phone__shot";
+    img.alt = screen.getAttribute("data-app-shot-alt") || "";
+    img.decoding = "async";
+    img.onload = function () {
+      const note = screen.querySelector(".phone__placeholder");
+      if (note) {
+        note.hidden = true;
+      }
+      screen.classList.add("phone__screen--ready");
+      screen.insertBefore(img, screen.firstChild);
+    };
+    img.src = src;
   });
 })();

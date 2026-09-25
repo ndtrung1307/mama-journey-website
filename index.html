@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="MamaJourney — Ứng dụng hỗ trợ theo dõi hành trình thai kỳ. Chính sách quyền riêng tư và thông tin liên hệ."
+      content="Mama Journey đồng hành cùng mẹ qua từng tuần thai kỳ với thông tin, gợi ý và những khoảnh khắc trên hành trình làm mẹ."
     />
-    <title>MamaJourney — Hành trình cùng Mama</title>
+    <title>Mama Journey — Hành trình yêu thương, bắt đầu từ hôm nay</title>
+    <link rel="canonical" href="https://mama-journey.io.vn/" />
+    <meta property="og:title" content="Mama Journey — Hành trình yêu thương, bắt đầu từ hôm nay" />
+    <meta
+      property="og:description"
+      content="Mama Journey đồng hành cùng mẹ qua từng tuần thai kỳ với thông tin, gợi ý và những khoảnh khắc trên hành trình làm mẹ."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mama-journey.io.vn/" />
+    <meta property="og:locale" content="vi_VN" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="home-page">
     <div class="page-wrapper">
-      <header class="site-header">
+      <header class="site-header" data-nav-breakpoint="959px">
         <div class="site-header__inner">
-          <a href="./" class="site-logo" aria-label="MamaJourney — Trang chủ">
+          <a href="./" class="site-logo" aria-label="Mama Journey — Trang chủ">
             <img
               src="assets/application-icon.png"
               alt=""
@@ -24,7 +33,7 @@
             />
             <img
               src="assets/home-header.png"
-              alt="MamaJourney"
+              alt="Mama Journey"
               class="site-logo__wordmark"
               width="260"
               height="22"
@@ -43,45 +52,428 @@
           </button>
           <nav class="site-nav" id="primary-nav" aria-label="Điều hướng chính">
             <ul>
-              <li><a href="./" aria-current="page">Trang chủ</a></li>
-              <li><a href="privacy-policy/">Chính sách quyền riêng tư</a></li>
-              <li><a href="contact/">Liên hệ</a></li>
+              <li><a href="#features">Tính năng</a></li>
+              <li><a href="#journey">Hành trình</a></li>
+              <li><a href="#about">Về Mama</a></li>
             </ul>
+            <a
+              class="home-nav__download"
+              href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Tải ứng dụng</a
+            >
           </nav>
         </div>
       </header>
 
       <main>
-        <section class="hero">
-          <h1 class="hero__title">
-            <img
-              src="assets/home-header.png"
-              alt="MamaJourney"
-              class="hero__logo"
-              width="320"
-              height="27"
-            />
-          </h1>
-          <p class="hero__tagline">Hành trình yêu thương cùng Mama</p>
-          <p class="hero__description">
-            MamaJourney là ứng dụng hỗ trợ người dùng tìm hiểu và theo dõi hành
-            trình thai kỳ thông qua nội dung giáo dục, thông tin được cá nhân
-            hóa, nhắc nhở và các tính năng liên quan.
-          </p>
-          <div class="hero__links">
-            <a href="privacy-policy/">Chính sách quyền riêng tư</a>
-            <a href="contact/">Liên hệ</a>
+        <section class="hero" aria-labelledby="hero-heading">
+          <div class="botanical-bg botanical-bg--cream botanical-bg--quiet" aria-hidden="true"></div>
+          <div class="hero__content">
+            <p class="hero__eyebrow">Mama Journey</p>
+            <h1 class="hero__heading" id="hero-heading">
+              Hành trình yêu thương, bắt đầu từ hôm nay.
+            </h1>
+            <p class="hero__lead">
+              Mama đồng hành cùng mẹ qua từng tuần thai kỳ với những thông tin,
+              gợi ý và khoảnh khắc đáng nhớ trên hành trình làm mẹ.
+            </p>
+            <a
+              class="home-cta"
+              href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Tải Mama trên App Store</a
+            >
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__bloom hero__bloom--lavender" aria-hidden="true"></div>
+            <div class="hero__bloom hero__bloom--green" aria-hidden="true"></div>
+            <div class="hero__bloom hero__bloom--peach" aria-hidden="true"></div>
+            <div class="phone">
+              <div
+                class="phone__screen"
+                data-app-shot="assets/app/home.webp"
+                data-app-shot-alt="Màn hình Trang chủ của ứng dụng Mama Journey trên iPhone."
+              >
+                <p class="phone__placeholder">
+                  Ảnh màn hình thật chưa có. Thêm
+                  <span class="phone__placeholder-path">assets/app/home.webp</span>
+                  để hiển thị Trang chủ Mama Journey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="showcase" id="features">
+          <section class="story" id="journey" aria-labelledby="journey-heading">
+            <div class="botanical-bg botanical-bg--cream botanical-bg--left" aria-hidden="true"></div>
+            <div class="story__inner">
+              <div class="story__copy">
+                <p class="story__eyebrow">Hành trình thai kỳ</p>
+                <h2 class="story__heading" id="journey-heading">
+                  Mỗi tuần, một hành trình mới.
+                </h2>
+                <p class="story__text">
+                  Mỗi tuần thai kỳ mang đến một hành trình riêng cho mẹ và bé,
+                  với những điều đáng nhớ và những khoảnh khắc nhỏ để cùng nhìn
+                  lại.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <img
+                      class="phone__shot"
+                      src="assets/app/weekly-journey.webp"
+                      alt="Mama Journey – hành trình thai kỳ theo tuần"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="story story--flip" id="daily" aria-labelledby="daily-heading">
+            <div class="botanical-bg botanical-bg--lavender botanical-bg--right" aria-hidden="true"></div>
+            <div class="story__inner">
+              <div class="story__copy">
+                <p class="story__eyebrow">Mỗi ngày cùng Mama</p>
+                <h2 class="story__heading" id="daily-heading">
+                  Mỗi ngày một điều để mẹ thêm yên tâm.
+                </h2>
+                <p class="story__text">
+                  Mama mang đến những nội dung nhỏ mỗi ngày, phù hợp với hành
+                  trình mẹ đang trải qua.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <img
+                      class="phone__shot"
+                      src="assets/app/daily.webp"
+                      alt="Mama Journey – nội dung Daily"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="story" id="milestones" aria-labelledby="milestones-heading">
+            <div class="botanical-bg botanical-bg--cream" aria-hidden="true"></div>
+            <div class="story__inner">
+              <div class="story__copy">
+                <p class="story__eyebrow">Những cột mốc đáng nhớ</p>
+                <h2 class="story__heading" id="milestones-heading">
+                  Lưu lại những dấu mốc trên hành trình làm mẹ.
+                </h2>
+                <p class="story__text">
+                  Những cột mốc trong thai kỳ giúp mẹ nhìn lại hành trình đã đi
+                  qua và biết mình đang ở đâu trên chặng đường phía trước.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <img
+                      class="phone__shot"
+                      src="assets/app/milestones.webp"
+                      alt="Mama Journey – các mốc thai kỳ"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="story story--flip" id="hydration" aria-labelledby="hydration-heading">
+            <div class="botanical-bg botanical-bg--sage botanical-bg--right" aria-hidden="true"></div>
+            <div class="story__inner">
+              <div class="story__copy">
+                <p class="story__eyebrow">Chăm mẹ mỗi ngày</p>
+                <h2 class="story__heading" id="hydration-heading">
+                  Nhắc mẹ uống nước đều đặn hơn.
+                </h2>
+                <p class="story__text">
+                  Một lời nhắc nhỏ trong ngày để mẹ nhớ quan tâm đến việc uống
+                  nước và chăm sóc bản thân.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <img
+                      class="phone__shot"
+                      src="assets/app/hydration.webp"
+                      alt="Mama Journey – nhắc uống nước"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="story" id="reminders" aria-labelledby="reminders-heading">
+            <div class="botanical-bg botanical-bg--cream botanical-bg--top" aria-hidden="true"></div>
+            <div class="story__inner">
+              <div class="story__copy">
+                <p class="story__eyebrow">Nhắc nhở</p>
+                <h2 class="story__heading" id="reminders-heading">
+                  Những việc trong ngày, Mama nhắc mẹ.
+                </h2>
+                <p class="story__text">
+                  Mama gom các lời nhắc mẹ đã tạo — việc đến giờ trong ngày và
+                  những mốc sắp tới — để mẹ thấy những gì còn chưa hoàn thành.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <img
+                      class="phone__shot"
+                      src="assets/app/reminders.webp"
+                      alt="Mama Journey – màn hình Nhắc nhở trong ngày"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="story story--flip" id="shopping" aria-labelledby="shopping-heading">
+            <div class="botanical-bg botanical-bg--cream botanical-bg--right" aria-hidden="true"></div>
+            <div class="story__inner">
+              <div class="story__copy">
+                <p class="story__eyebrow">Chuẩn bị cho bé</p>
+                <h2 class="story__heading" id="shopping-heading">
+                  Chuẩn bị từng chút cho ngày gặp con.
+                </h2>
+                <p class="story__text">
+                  Mama giúp mẹ lưu lại những món đồ cần chuẩn bị và theo dõi
+                  danh sách mua sắm trong hành trình đón bé.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <img
+                      class="phone__shot"
+                      src="assets/app/shopping.webp"
+                      alt="Mama Journey – danh sách đồ cần mua"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="story" id="calendar" aria-labelledby="calendar-heading">
+            <div class="botanical-bg botanical-bg--lavender botanical-bg--left" aria-hidden="true"></div>
+            <div class="story__inner">
+              <div class="story__copy">
+                <p class="story__eyebrow">Theo dõi hành trình</p>
+                <h2 class="story__heading" id="calendar-heading">
+                  Biết mình đang ở đâu trên hành trình thai kỳ.
+                </h2>
+                <p class="story__text">
+                  Lịch thai kỳ giúp mẹ nhìn lại các tuần và những mốc đang diễn
+                  ra trong hành trình của mình.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <img
+                      class="phone__shot"
+                      src="assets/app/pregnancy-calendar.webp"
+                      alt="Mama Journey – lịch thai kỳ"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="story story--flip" id="widget" aria-labelledby="widget-heading">
+            <div class="botanical-bg botanical-bg--lavender botanical-bg--bottom" aria-hidden="true"></div>
+            <div class="story__inner">
+              <div class="story__copy">
+                <p class="story__eyebrow">Trên màn hình chính</p>
+                <h2 class="story__heading" id="widget-heading">
+                  Tuần thai của mẹ, ngay trên màn hình chính.
+                </h2>
+                <p class="story__text">
+                  Widget Mama Journey cho mẹ xem nhanh tuần thai, số ngày còn
+                  lại đến ngày dự sinh và một cập nhật nhỏ của hôm nay mà không
+                  cần mở app.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <img
+                      class="phone__shot"
+                      src="assets/app/widget.webp"
+                      alt="Mama Journey – widget tuần thai trên màn hình chính"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="about" id="about" aria-labelledby="about-heading">
+          <div class="botanical-bg botanical-bg--cream" aria-hidden="true"></div>
+          <div class="about__inner">
+            <p class="story__eyebrow">Về Mama</p>
+            <h2 class="story__heading" id="about-heading">
+              Hành trình làm mẹ bớt rối hơn, từng chút một.
+            </h2>
+            <p class="story__text about__lead">
+              Mama được tạo ra để đồng hành cùng mẹ trong suốt hành trình thai
+              kỳ — từ những thay đổi đầu tiên, những tuần thai đang lớn lên, đến
+              những điều mẹ muốn chuẩn bị trước ngày gặp con.
+            </p>
+            <ol class="principles">
+              <li>
+                <h3>Đơn giản</h3>
+                <p>
+                  Những thông tin cần thiết được trình bày rõ ràng, để mẹ dễ
+                  theo dõi trong hành trình mỗi ngày.
+                </p>
+              </li>
+              <li>
+                <h3>Phù hợp từng giai đoạn</h3>
+                <p>
+                  Nội dung và trải nghiệm được xây dựng xoay quanh hành trình
+                  thai kỳ của mẹ.
+                </p>
+              </li>
+              <li>
+                <h3>Nhẹ nhàng</h3>
+                <p>
+                  Mama ưu tiên một trải nghiệm bình tĩnh, gần gũi và dễ sử dụng.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="trust" id="approach" aria-labelledby="approach-heading">
+          <div class="botanical-bg botanical-bg--sage" aria-hidden="true"></div>
+          <div class="trust__bloom trust__bloom--peach" aria-hidden="true"></div>
+          <div class="trust__bloom trust__bloom--lavender" aria-hidden="true"></div>
+          <div class="trust__inner">
+            <p class="story__eyebrow">Cách Mama đồng hành</p>
+            <h2 class="story__heading" id="approach-heading">
+              Thông tin vừa đủ, để mẹ dễ hiểu hơn.
+            </h2>
+            <p class="story__text">
+              Mama hướng đến việc trình bày thông tin thai kỳ theo cách rõ ràng,
+              dễ tiếp cận và phù hợp với từng giai đoạn.
+            </p>
+          </div>
+        </section>
+
+        <section class="closing" id="download" aria-labelledby="download-heading">
+          <div class="botanical-bg botanical-bg--cream botanical-bg--left botanical-bg--closing" aria-hidden="true"></div>
+          <div class="closing__bloom closing__bloom--lavender" aria-hidden="true"></div>
+          <div class="closing__bloom closing__bloom--green" aria-hidden="true"></div>
+          <div class="closing__inner">
+            <div class="closing__copy">
+              <p class="story__eyebrow">Mama Journey</p>
+              <h2 class="story__heading" id="download-heading">
+                Bắt đầu hành trình làm mẹ cùng Mama.
+              </h2>
+              <p class="story__text">
+                Đồng hành cùng mẹ qua từng tuần thai kỳ, từng ngày và những điều
+                nhỏ bé đáng nhớ.
+              </p>
+              <a
+                class="home-cta"
+                href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tải Mama trên App Store</a
+              >
+            </div>
+            <div class="closing__mark">
+              <img
+                class="closing__icon"
+                src="assets/application-icon.png"
+                alt=""
+                width="1024"
+                height="1024"
+              />
+              <a
+                class="closing__qr"
+                href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="assets/app/mama-journey-appstore-qr.webp"
+                  alt="Mã QR để tải Mama Journey trên App Store"
+                  width="784"
+                  height="784"
+                />
+              </a>
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
         <div class="site-footer__inner">
-          <p class="site-footer__brand">MamaJourney</p>
+          <p class="site-footer__brand">Mama Journey</p>
           <p class="site-footer__tagline">Ứng dụng được phát triển độc lập</p>
           <nav class="site-footer__links" aria-label="Liên kết chân trang">
             <a href="privacy-policy/">Chính sách quyền riêng tư</a>
             <a href="contact/">Liên hệ</a>
+            <a
+              href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
+              target="_blank"
+              rel="noopener noreferrer"
+              >App Store</a
+            >
           </nav>
           <p class="site-footer__email">
             Thư điện tử:
