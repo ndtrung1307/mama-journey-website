@@ -89,6 +89,8 @@ def build_page(document: dict) -> str:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Chính sách quyền riêng tư của MamaJourney — cách ứng dụng xử lý thông tin và dữ liệu của bạn.">
   <title>MamaJourney — {document["title"]}</title>
+  <link rel="icon" href="../assets/application-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/application-icon.png">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
