@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Mama Journey đồng hành cùng mẹ qua từng tuần thai kỳ với thông tin, gợi ý và những khoảnh khắc trên hành trình làm mẹ."
+      content="Theo dõi hành trình thai kỳ, khám phá các mốc phát triển của bé và quản lý những việc cần chuẩn bị cùng MamaJourney."
     />
-    <title>Mama Journey — Hành trình yêu thương, bắt đầu từ hôm nay</title>
+    <title>MamaJourney – Ứng dụng đồng hành cùng mẹ bầu</title>
     <link rel="icon" href="assets/application-icon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/application-icon.png" />
     <link rel="canonical" href="https://mama-journey.io.vn/" />
-    <meta property="og:title" content="Mama Journey — Hành trình yêu thương, bắt đầu từ hôm nay" />
+    <meta property="og:title" content="MamaJourney – Ứng dụng đồng hành cùng mẹ bầu" />
     <meta
       property="og:description"
-      content="Mama Journey đồng hành cùng mẹ qua từng tuần thai kỳ với thông tin, gợi ý và những khoảnh khắc trên hành trình làm mẹ."
+      content="Theo dõi hành trình thai kỳ, khám phá các mốc phát triển của bé và quản lý những việc cần chuẩn bị cùng MamaJourney."
     />
+    <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://mama-journey.io.vn/" />
     <meta property="og:locale" content="vi_VN" />
     <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "Mama Journey",
+            "url": "https://mama-journey.io.vn/",
+            "email": "support@mama-journey.io.vn",
+            "logo": "https://mama-journey.io.vn/assets/application-icon.png"
+          },
+          {
+            "@type": "WebSite",
+            "name": "Mama Journey",
+            "url": "https://mama-journey.io.vn/",
+            "inLanguage": "vi"
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="home-page">
     <div class="page-wrapper">
@@ -54,9 +75,9 @@
           </button>
           <nav class="site-nav" id="primary-nav" aria-label="Điều hướng chính">
             <ul>
-              <li><a href="#features">Tính năng</a></li>
-              <li><a href="#journey">Hành trình</a></li>
-              <li><a href="#about">Về Mama</a></li>
+              <li><a href="./" aria-current="page">Trang chủ</a></li>
+              <li><a href="cong-cu/">Công cụ</a></li>
+              <li><a href="lich-kham-thai/">Lịch khám thai</a></li>
             </ul>
             <a
               class="home-nav__download"
@@ -81,13 +102,18 @@
               Mama đồng hành cùng mẹ qua từng tuần thai kỳ với những thông tin,
               gợi ý và khoảnh khắc đáng nhớ trên hành trình làm mẹ.
             </p>
-            <a
-              class="home-cta"
-              href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Tải Mama trên App Store</a
-            >
+            <div class="hero__actions">
+              <a
+                class="home-cta"
+                href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tải Mama trên App Store</a
+              >
+              <a class="hero__secondary" href="cong-cu/tinh-ngay-du-sinh/"
+                >Tính ngày dự sinh</a
+              >
+            </div>
           </div>
 
           <div class="hero__visual">
@@ -360,7 +386,91 @@
               </div>
             </div>
           </section>
+
+          <section class="story" id="thai-education" aria-labelledby="thai-education-heading">
+            <div class="botanical-bg botanical-bg--cream" aria-hidden="true"></div>
+            <div class="story__inner thai__intro">
+              <div class="story__copy">
+                <p class="story__eyebrow">Thai giáo</p>
+                <h2 class="story__heading" id="thai-education-heading">
+                  Thai giáo mỗi ngày
+                </h2>
+                <p class="story__text">
+                  Dành những phút giây nhẹ nhàng bên bé qua âm nhạc và những
+                  câu chuyện ý nghĩa.
+                </p>
+              </div>
+            </div>
+            <div class="story__inner thai__feature">
+              <div class="story__copy">
+                <h3 class="story__heading thai__title">Nhạc thai giáo</h3>
+                <p class="story__text">
+                  Thư giãn cùng những giai điệu nhẹ nhàng, tạo nên khoảng thời
+                  gian bình yên bên bé.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <!-- PREGNANCY_MUSIC_IMAGE_URL -->
+                    <img
+                      class="phone__shot"
+                      src="assets/app/music.webp"
+                      alt="Mama Journey – màn hình Nhạc thai giáo"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="story__inner thai__feature thai__stories">
+              <div class="story__copy">
+                <h3 class="story__heading thai__title">Truyện thai giáo</h3>
+                <p class="story__text">
+                  Cùng bé lắng nghe những câu chuyện dịu dàng và nuôi dưỡng
+                  những khoảnh khắc gắn kết.
+                </p>
+              </div>
+              <div class="story__visual">
+                <div class="phone">
+                  <div class="phone__screen phone__screen--ready">
+                    <!-- PREGNANCY_STORIES_IMAGE_URL -->
+                    <img
+                      class="phone__shot"
+                      src="assets/app/story.webp"
+                      alt="Mama Journey – màn hình Truyện thai giáo"
+                      width="1179"
+                      height="2556"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
+
+        <section class="story tool-teaser" id="tools" aria-labelledby="tools-heading">
+          <div class="botanical-bg botanical-bg--cream botanical-bg--quiet" aria-hidden="true"></div>
+          <div class="story__inner">
+            <div class="story__copy">
+              <p class="story__eyebrow">Công cụ</p>
+              <h2 class="story__heading" id="tools-heading">Tính ngày dự sinh</h2>
+              <p class="story__text">
+                Ước tính ngày dự sinh, tuổi thai và số ngày còn lại từ ngày đầu
+                kỳ kinh cuối. Công cụ chạy trên trình duyệt, mẹ không cần tạo
+                tài khoản.
+              </p>
+              <a class="home-cta tool-teaser__cta" href="cong-cu/tinh-ngay-du-sinh/"
+                >Mở công cụ</a
+              >
+            </div>
+          </div>
+        </section>
 
         <section class="about" id="about" aria-labelledby="about-heading">
           <div class="botanical-bg botanical-bg--cream" aria-hidden="true"></div>
@@ -468,6 +578,8 @@
           <p class="site-footer__brand">Mama Journey</p>
           <p class="site-footer__tagline">Ứng dụng được phát triển độc lập</p>
           <nav class="site-footer__links" aria-label="Liên kết chân trang">
+            <a href="cong-cu/">Công cụ</a>
+            <a href="lich-kham-thai/">Lịch khám thai</a>
             <a href="privacy-policy/">Chính sách quyền riêng tư</a>
             <a href="contact/">Liên hệ</a>
             <a

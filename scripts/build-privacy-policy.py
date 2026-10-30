@@ -91,6 +91,8 @@ def build_page(document: dict) -> str:
   <title>MamaJourney — {document["title"]}</title>
   <link rel="icon" href="../assets/application-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/application-icon.png">
+  <link rel="canonical" href="https://mama-journey.io.vn/privacy-policy/">
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -117,6 +119,8 @@ def build_page(document: dict) -> str:
         <nav class="site-nav" id="primary-nav" aria-label="Điều hướng chính">
           <ul>
             <li><a href="../">Trang chủ</a></li>
+            <li><a href="../cong-cu/">Công cụ</a></li>
+            <li><a href="../lich-kham-thai/">Lịch khám thai</a></li>
             <li><a href="../privacy-policy/" aria-current="page">Chính sách quyền riêng tư</a></li>
             <li><a href="../contact/">Liên hệ</a></li>
           </ul>
@@ -150,6 +154,8 @@ def build_page(document: dict) -> str:
         <p class="site-footer__brand">MamaJourney</p>
         <p class="site-footer__tagline">Ứng dụng được phát triển độc lập</p>
         <nav class="site-footer__links" aria-label="Liên kết chân trang">
+          <a href="../cong-cu/">Công cụ</a>
+          <a href="../lich-kham-thai/">Lịch khám thai</a>
           <a href="../privacy-policy/">Chính sách quyền riêng tư</a>
           <a href="../contact/">Liên hệ</a>
         </nav>

@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tính ngày dự sinh, tuổi thai và số ngày còn lại đến ngày sinh. Tìm hiểu cách tính và những điều cần biết về ngày dự sinh."
+    />
+    <title>Tính Ngày Dự Sinh Online – Công Cụ Tính Ngày Sinh | MamaJourney</title>
+    <link rel="icon" href="../../assets/application-icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../../assets/application-icon.png" />
+    <link rel="canonical" href="https://mama-journey.io.vn/cong-cu/tinh-ngay-du-sinh/" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Tính Ngày Dự Sinh Online – Công Cụ Tính Ngày Sinh | MamaJourney"
+    />
+    <meta
+      property="og:description"
+      content="Tính ngày dự sinh, tuổi thai và số ngày còn lại đến ngày sinh. Tìm hiểu cách tính và những điều cần biết về ngày dự sinh."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mama-journey.io.vn/cong-cu/tinh-ngay-du-sinh/" />
+    <meta property="og:locale" content="vi_VN" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://mama-journey.io.vn/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Công cụ",
+            "item": "https://mama-journey.io.vn/cong-cu/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tính ngày dự sinh",
+            "item": "https://mama-journey.io.vn/cong-cu/tinh-ngay-du-sinh/"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="home-page tool-page due-page">
+    <div class="page-wrapper">
+      <header class="site-header" data-nav-breakpoint="959px">
+        <div class="site-header__inner">
+          <a href="../../" class="site-logo" aria-label="Mama Journey — Trang chủ">
+            <img
+              src="../../assets/application-icon.png"
+              alt=""
+              class="site-logo__icon"
+              width="40"
+              height="40"
+            />
+            <img
+              src="../../assets/home-header.png"
+              alt="Mama Journey"
+              class="site-logo__wordmark"
+              width="260"
+              height="22"
+            />
+          </a>
+          <button
+            type="button"
+            class="site-nav__toggle"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Mở menu điều hướng"
+          >
+            <span class="site-nav__toggle-icon" aria-hidden="true">
+              <span class="site-nav__toggle-bar"></span>
+            </span>
+          </button>
+          <nav class="site-nav" id="primary-nav" aria-label="Điều hướng chính">
+            <ul>
+              <li><a href="../../">Trang chủ</a></li>
+              <li><a href="../">Công cụ</a></li>
+              <li><a href="../../lich-kham-thai/">Lịch khám thai</a></li>
+            </ul>
+            <a
+              class="home-nav__download"
+              href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Tải ứng dụng</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <nav class="breadcrumbs" aria-label="Đường dẫn">
+          <ol>
+            <li><a href="../../">Trang chủ</a></li>
+            <li><a href="../">Công cụ</a></li>
+            <li aria-current="page">Tính ngày dự sinh</li>
+          </ol>
+        </nav>
+
+        <section class="due-hero" aria-labelledby="due-heading">
+          <h1 id="due-heading">Tính ngày dự sinh</h1>
+          <p class="tool-lead">
+            Nhập ngày đầu kỳ kinh cuối để ước tính ngày dự sinh, tuổi thai và số
+            ngày còn lại. Kết quả chỉ là ước tính.
+          </p>
+          <form class="tool-form due-form" data-due-date-form novalidate>
+            <div class="tool-field">
+              <label for="lmp">Ngày đầu kỳ kinh cuối</label>
+              <input id="lmp" name="lmp" type="date" required autocomplete="off" />
+            </div>
+            <div class="tool-field">
+              <label for="cycle">Độ dài chu kỳ (ngày)</label>
+              <select id="cycle" name="cycle">
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28" selected>28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+              </select>
+              <p class="tool-hint">
+                Mặc định là 28 ngày. Chỉ đổi số này nếu chu kỳ của mẹ thường ngắn
+                hoặc dài hơn.
+              </p>
+            </div>
+            <button class="home-cta" type="submit">Tính ngày dự sinh</button>
+            <p class="tool-hint due-form__privacy">
+              Dữ liệu chỉ được tính trên trình duyệt, không gửi đi. Mẹ hoàn toàn
+              yên tâm.
+            </p>
+            <p class="tool-error" data-due-date-error role="alert" hidden></p>
+          </form>
+        </section>
+
+        <section
+          class="due-result"
+          data-due-date-result
+          hidden
+          aria-live="polite"
+          aria-labelledby="due-result-heading"
+        >
+          <div class="due-result__head">
+            <h2 id="due-result-heading">Kết quả dự kiến của mẹ</h2>
+            <button class="due-reset" type="button" data-due-date-reset>Tính lại</button>
+          </div>
+          <p data-result="basis"></p>
+          <div class="due-result__grid">
+            <article class="due-card due-card--peach">
+              <h3>Ngày dự sinh ước tính</h3>
+              <p class="due-card__value" data-result="due"></p>
+              <p class="due-card__note" data-result="due-note"></p>
+            </article>
+            <article class="due-card due-card--lavender">
+              <h3>Tuổi thai hiện tại</h3>
+              <p class="due-card__value" data-result="age"></p>
+              <p class="due-card__note" data-result="age-note"></p>
+            </article>
+            <article class="due-card due-card--sage">
+              <h3 data-result="remain-label">Số ngày còn lại</h3>
+              <p class="due-card__value" data-result="remain"></p>
+              <p class="due-card__note" data-result="remain-note"></p>
+            </article>
+          </div>
+          <p class="due-result__disclaimer" data-result="disclaimer"></p>
+        </section>
+
+        <section class="due-promo" data-due-date-promo hidden aria-labelledby="promo-heading">
+          <div class="due-promo__copy">
+            <h2 id="promo-heading">Đồng hành cùng bé qua từng tuần thai</h2>
+            <p>
+              Theo dõi các cột mốc thai kỳ, quản lý nhắc nhở và lưu giữ hành
+              trình cùng MamaJourney.
+            </p>
+            <ul>
+              <li>Xem mốc thai kỳ theo từng tuần</li>
+              <li>Nhắc những việc mẹ đã tạo</li>
+              <li>Lưu lại các cột mốc đáng nhớ</li>
+            </ul>
+            <a class="home-cta" href="../../">Khám phá ứng dụng</a>
+          </div>
+          <div class="due-promo__visual">
+            <div class="phone">
+              <div class="phone__screen phone__screen--ready">
+                <img
+                  class="phone__shot"
+                  src="../../assets/app/home.webp"
+                  alt="Mama Journey – màn hình Trang chủ"
+                  width="1179"
+                  height="2556"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="due-info">
+          <section class="tool-prose" aria-labelledby="how-heading">
+            <h2 id="how-heading">Cách công cụ tính</h2>
+            <p>
+              Với chu kỳ 28 ngày, ngày dự sinh ước tính bằng ngày đầu kỳ kinh cuối
+              cộng 280 ngày, tức khoảng 40 tuần. Nếu chu kỳ khác 28 ngày, công cụ
+              cộng thêm số ngày chênh lệch: độ dài chu kỳ trừ 28.
+            </p>
+            <p>
+              Tuổi thai cũng được tính từ ngày đầu kỳ kinh cuối, không tính từ
+              ngày thụ thai. Vì vậy những tuần đầu đã gồm khoảng hai tuần trước
+              khi thụ thai.
+            </p>
+          </section>
+
+          <section class="tool-prose" aria-labelledby="limits-heading">
+            <h2 id="limits-heading">Điều cần biết</h2>
+            <ul>
+              <li>Ngày dự sinh tính từ kỳ kinh cuối là ước tính, không phải ngày sinh đã được xác nhận.</li>
+              <li>Độ dài chu kỳ và thời điểm rụng trứng có thể làm ước tính lệch.</li>
+              <li>Siêu âm và thăm khám có thể chỉnh lại tuổi thai.</li>
+              <li>Công cụ không chẩn đoán có thai và không đánh giá sức khỏe của bé.</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="tool-prose due-faq" aria-labelledby="faq-heading">
+          <h2 id="faq-heading">Câu hỏi thường gặp</h2>
+          <details>
+            <summary>Nếu mẹ không nhớ ngày kinh cuối thì sao?</summary>
+            <p>
+              Công cụ cần ngày đó để tính. Nếu mẹ không chắc, hãy hỏi bác sĩ hoặc
+              cơ sở khám thai thay vì đoán một ngày.
+            </p>
+          </details>
+          <details>
+            <summary>Siêu âm có thể điều chỉnh ngày dự sinh không?</summary>
+            <p>
+              Có thể. Siêu âm trong những tháng đầu, thường khoảng 12 tuần, đo
+              kích thước của bé và có thể điều chỉnh ngày dự sinh so với cách tính
+              từ kỳ kinh.
+            </p>
+          </details>
+          <details>
+            <summary>Công cụ có lưu ngày mẹ nhập không?</summary>
+            <p>
+              Không. Phép tính chạy trên trình duyệt của mẹ. Trang không gửi ngày
+              kinh cuối đi đâu và không lưu lại.
+            </p>
+          </details>
+        </section>
+
+        <section class="tool-prose" aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Nguồn và lưu ý</h2>
+          <ul>
+            <li>
+              <a href="https://www.nhs.uk/pregnancy/finding-out/due-date-calculator/"
+                >NHS — Pregnancy due date calculator</a
+              >: ngày dự sinh ước tính từ ngày đầu kỳ kinh cuối; chu kỳ có thể
+              khác 28 ngày; thai kỳ thường từ 37 đến 42 tuần.
+            </li>
+            <li>
+              <a href="https://www.nhs.uk/pregnancy/your-pregnancy-care/ultrasound-scans/"
+                >NHS — Ultrasound scans in pregnancy</a
+              >: siêu âm khoảng 12 tuần có thể điều chỉnh ngày dự sinh đã tính
+              từ kỳ kinh cuối.
+            </li>
+          </ul>
+          <p>
+            Nội dung này nhằm giải thích cách công cụ tính. Không thay cho tư
+            vấn của bác sĩ hoặc cơ sở khám thai.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <p class="site-footer__brand">Mama Journey</p>
+          <p class="site-footer__tagline">Ứng dụng được phát triển độc lập</p>
+          <nav class="site-footer__links" aria-label="Liên kết chân trang">
+            <a href="../../">Trang chủ</a>
+            <a href="../">Công cụ</a>
+            <a href="../../lich-kham-thai/">Lịch khám thai</a>
+            <a href="../../privacy-policy/">Chính sách quyền riêng tư</a>
+            <a href="../../contact/">Liên hệ</a>
+            <a
+              href="https://apps.apple.com/vn/app/mama-journey/id6775170171"
+              target="_blank"
+              rel="noopener noreferrer"
+              >App Store</a
+            >
+          </nav>
+          <p class="site-footer__email">
+            Thư điện tử:
+            <a href="mailto:support@mama-journey.io.vn">support@mama-journey.io.vn</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="../../js/due-date.js"></script>
+    <script src="../../js/due-date-ui.js"></script>
+    <script src="../../js/nav.js"></script>
+  </body>
+</html>

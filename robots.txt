@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mama-journey.io.vn/sitemap.xml
